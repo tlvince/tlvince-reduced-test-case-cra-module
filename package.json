@@ -1,0 +1,25 @@
+{
+  "name": "tlvince-reduced-test-case-cra-module",
+  "version": "1.0.0",
+  "description": "Reduced test case for ES6 modules",
+  "main": "dist/tlvince-reduced-test-case-cra-module.cjs.js",
+  "module": "dist/tlvince-reduced-test-case-cra-module.es.js",
+  "scripts": {
+    "build": "rollup -c && rollup -c rollup.config.es.js",
+    "prebuild": "rm -rf dist && mkdir dist",
+    "test": "exit"
+  },
+  "keywords": [
+    "test",
+    "sandbox"
+  ],
+  "author": "Tom Vincent <npm@tlvince.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.42.0",
+    "rollup-plugin-buble": "^0.15.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
